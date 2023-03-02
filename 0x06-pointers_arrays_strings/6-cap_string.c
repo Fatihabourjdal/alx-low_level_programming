@@ -1,32 +1,29 @@
-#include "main.h"
+#include "holberton.h"
 /**
-*cap_string - function that capitalize first character of a word
-*@str: string to capitalize
-*Return:returns the capitalized string
-*/
-char *cap_string(char *str)
+ * leet - encodes a string
+ * @str: the string to encode
+ *
+ * Return: the encode string
+ */
+char *leet(char *str)
 {
-	int index = 0;
+	int i, j;
+	char c[] = "aAeEoOtTlL";
+	char n[] = "4433007711";
 
-	while (str[++index])
+	i = 0;
+	while (str[i] != '\0')
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		j = 0;
+		while (c[j] != '\0')
+		{
+			if (str[i] == c[j])
+			{
+				str[i] = n[j];
+			}
+			j++;
+		}
+		i++;
 	}
 	return (str);
 }
