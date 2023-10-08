@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * dtring_nconcat - main entry
+ * string_nconcat - main entry
  * @s1:input
  * @s2:input
  * @n:input
- * Return : 0
+ * Return: 0
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
