@@ -2,11 +2,12 @@
 #include <stdlib>
 
 /**
- * malloc_checked -main Entry
+ * malloc_checked - main Entry
  * @b: input
  * Return: 0
  *
  */
+
 void *malloc_checked(unsigned int b)
 {
 	void *p;
