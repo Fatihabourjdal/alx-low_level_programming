@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - main Entry
+ * malloc_checked -main Entry
  * @b: input
  * Return: 0
  *
