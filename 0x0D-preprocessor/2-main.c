@@ -5,7 +5,6 @@
  * main - prints the name of the file.
  *
  * return: Always 0.
- *
  */
 int main(void)
 {
